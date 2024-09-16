@@ -1,0 +1,15 @@
+Sub fuction()
+    CantCodigo = Int(InputBox("Ingrese la cantidad de códigos que desea generar."))
+    For i = 1 To CantCodigo
+        dos = i + 1
+        nombre = Cells(dos, 1)
+        Municipio = Cells(dos, 2)
+        Placa = Cells(dos, 3)
+        muni = Mid(Municipio, 1, 3)
+        nom = Mid(nombre, Len(nombre) - 1, 2)
+        Plac = Mid(Placa, Len(Placa) - 2, 3)
+        codigo = muni & nom & Plac
+        Cells(dos, 4) = codigo
+        
+    Next i
+End Sub

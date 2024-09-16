@@ -1,0 +1,19 @@
+Sub programa1()
+    cant = InputBox("Ingrese la cantidad de nombres a separar")
+    For k = 1 To cant + 1
+    cantidad = Cells(1, 7)
+        nombre = Cells(k, 1)
+        separar = Len(nombre)
+        For i = 1 To separar
+            cadena = Mid(nombre, i, 1)
+            sumar = 1 + i
+            Cells(cantidad, sumar) = cadena
+            
+        Next i
+        Cells(1, 7) = cantidad + 1
+        
+    Next k
+    
+End Sub
+
+

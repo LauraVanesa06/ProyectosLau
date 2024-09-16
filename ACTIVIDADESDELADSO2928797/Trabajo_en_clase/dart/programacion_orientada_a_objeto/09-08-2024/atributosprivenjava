@@ -1,0 +1,25 @@
+class Helloword {
+    public static void main(String[] args) {
+        Car car = new Car();
+        // car.placa = "xcvbvc";
+            // modificar valor.
+        car.setPlaca("Cvbvc");
+
+        // obtener valor
+        car.getPlaca();
+    }
+}
+class Car{
+    private String placa;
+    // modificar valor.
+    public void setPlaca(String placa){
+        //this.placa = "bfd";
+        this.placa = placa; 
+        if()
+    }
+    // obtener valor
+    public String getPlaca(){
+        return this.placa;        
+    }
+}
+

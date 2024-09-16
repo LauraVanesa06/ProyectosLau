@@ -1,0 +1,12 @@
+Sub programa3()
+    regitro = DATOS.Cells(2, 5)
+    DATOS.Cells(regitro, 1) = reg.Cells(4, 4)
+    DATOS.Cells(regitro, 2) = reg.Cells(6, 4)
+    DATOS.Cells(regitro, 3) = reg.Cells(8, 4)
+    
+    MsgBox ("Su información ha sido guardado con exito")
+    reg.Cells(4, 4) = ""
+    reg.Cells(6, 4) = ""
+    reg.Cells(8, 4) = ""
+    DATOS.Cells(2, 5) = regitro + 1
+End Sub

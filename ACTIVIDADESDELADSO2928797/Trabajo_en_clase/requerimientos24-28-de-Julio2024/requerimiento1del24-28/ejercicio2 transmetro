@@ -1,0 +1,16 @@
+Sub programa()
+
+    For i = 1 To 10
+    guardar = Cells(1, 3)
+    nombre = Cells(2, i)
+    Cells(2, guardar) = nombre
+    blanco = ""
+    
+    MsgBox ("presione aceptar")
+    
+    Cells(1, 3) = guardar + 1
+    Cells(2, i) = blanco
+    Next i
+   
+    
+End Sub

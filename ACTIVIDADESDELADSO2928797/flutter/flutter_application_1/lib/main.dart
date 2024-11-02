@@ -1,5 +1,5 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/models/post_search_screen.dart';
 import 'package:flutter_application_1/widget/ErrorData.dart';
 import 'package:flutter_application_1/widget/loading.dart';
 import 'package:http/http.dart' as http;
@@ -16,16 +16,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
-        appBar: AppBar(title: Text('Buscar Post')),
+        appBar: AppBar(
+          title: Text('Buscar Post')
+        ),
         body: PostSearchScreen(),
       ),
     );
   }
-}
-
-class PostSearchScreen extends StatefulWidget {
-  @override
-  _PostSearchScreenState createState() => _PostSearchScreenState();
 }
 
 class _PostSearchScreenState extends State<PostSearchScreen> {
@@ -69,10 +66,10 @@ class _PostSearchScreenState extends State<PostSearchScreen> {
             decoration: InputDecoration(
               border: OutlineInputBorder(),
               labelText: 'Ingrese el número del post',
-              hintText: 'ID del Post',
+              hintText: 'ID del Post' ,
             ),
           ),
-          SizedBox(height: 20),
+          SizedBox(height: 10),
           ElevatedButton(
             onPressed: _searchPost,
             child: Text(

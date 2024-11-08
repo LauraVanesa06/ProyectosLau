@@ -1,19 +1,18 @@
 import 'dart:convert';
 
-class Post {
-  int? userId;
+class Photos {
+  int? albumId;
   int? id;
   String? title;
-  String? body;
+  String? url;
   String? thumbnailUrl;
 
-
-  Post(String jsonString) {
+  Photos(String jsonString) {
     Map<String, dynamic> data = jsonDecode(jsonString);
-    userId = data['userId'];
+    albumId = data['albumId'];
     id = data['id'];
     title = data['title'];
-    body = data['body'];
+    url = data['url'];
     thumbnailUrl = data['thumbnailUrl'];
   }
 }

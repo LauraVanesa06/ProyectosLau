@@ -1,19 +1,20 @@
 import 'dart:convert';
 
-class Post {
+class Comments {
   int? userId;
   int? id;
-  String? title;
+  String? name;
+  String? email;
   String? body;
-  String? thumbnailUrl;
 
 
-  Post(String jsonString) {
+  Comments(String jsonString) {
     Map<String, dynamic> data = jsonDecode(jsonString);
     userId = data['userId'];
     id = data['id'];
-    title = data['title'];
-    body = data['body'];
-    thumbnailUrl = data['thumbnailUrl'];
+    name = data['name'];
+    email = data['email'];
+        body = data['body'];
+
   }
 }

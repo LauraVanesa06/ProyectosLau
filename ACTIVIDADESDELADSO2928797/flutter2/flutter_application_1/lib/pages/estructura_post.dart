@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/partes.dart'; // Asegúrate de que la página esté importada
+import 'package:flutter_application_1/pages/partes_post.dart'; // Asegúrate de que la página esté importada
 
 class PostSearchScreen extends StatelessWidget {
-  final TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = 
+  
+  TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 191, 136, 250),
-      appBar: AppBar(title: Text('Buscar Post'),
+      appBar: AppBar(title: const Text('Buscar Post'),
               backgroundColor: const Color.fromARGB(255, 191, 136, 250),
       ),
       body: Padding(
@@ -21,7 +23,7 @@ class PostSearchScreen extends StatelessWidget {
             TextField(  
               controller: _controller, // Controlador agregado
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 border: OutlineInputBorder(
                   borderSide: BorderSide(
                     color: Colors.white,
@@ -36,7 +38,7 @@ class PostSearchScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 String postId = _controller.text;
@@ -49,11 +51,11 @@ class PostSearchScreen extends StatelessWidget {
                   );
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Por favor, ingrese un ID de post válido')),
+                    const SnackBar(content: Text('Por favor, ingrese un ID de post válido')),
                   );
                 }
               },
-              child: Text('Buscar Post'),
+              child: const Text('Buscar Post'),
             ),
           ],
         ),

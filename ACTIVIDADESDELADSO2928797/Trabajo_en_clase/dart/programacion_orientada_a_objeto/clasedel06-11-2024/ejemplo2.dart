@@ -1,14 +1,34 @@
 
 
  void main() {
-  Logistics logistics = RoadLogistics();
-  Transporte transporte = Logistics.createTransport();
-  transporte.logistics();
+ // Logistics logistics = RoadLogistics();
+  //Transporte transporte = Logistics.createTransport();
+  Myapp myapp = Myapp(1);
+  myapp.dibujar();
+}
+
+class Myapp {
+  Logistics? dialogo;
+
+  Myapp(int so){
+      if (so == 1) {
+    this.dialogo = RoadLogistics();
+  } else if(so == 2){
+    this.dialogo = SeaLogistics();
+  } else{
+    print("Vaya a recogerse e ingrese algo valido :)");
+  }
+  }
+
+  void dibujar(){
+    Transporte boton = dialogo!.createTransport();
+    boton.deliver();
+  }
 }
 
 
 abstract class Logistics {
-  planDelivery();
+ // planDelivery();
   createTransport();
   
 }
@@ -48,13 +68,13 @@ abstract class Transporte {
 class Truck implements Transporte {
    @override
   void deliver(){
-    print("pinta boton Truck");
+    print(" Truck");
   }
 }
 
 class Ship implements Transporte {
    @override
   void deliver(){
-    print("pinta boton Ship");
+    print(" Ship");
   }
 }

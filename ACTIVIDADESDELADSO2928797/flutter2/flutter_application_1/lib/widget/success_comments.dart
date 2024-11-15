@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/models/post.dart';
+import 'package:flutter_application_1/models/comments.dart';
 
-class Success extends StatelessWidget {
-  final Post post;
+class Success_comments extends StatelessWidget {
+  final Comments comments;
 
-  const Success({super.key, required this.post});
+  const Success_comments({super.key, required this.comments});
 
   @override
   Widget build(BuildContext context) {
@@ -14,23 +14,23 @@ class Success extends StatelessWidget {
         children: [
          
           Text(
-            'UserId: ${post.userId}',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            'UserId: ${comments.userId}',
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 10),
           Text(
-            'ID: ${post.id}',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            'ID: ${comments.id}',
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 10),
           Text(
-            'Title: ${post.title}',
-            style: TextStyle(fontSize: 16, color: Colors.black),
+            'Title: ${comments.name}',
+            style: const TextStyle(fontSize: 16, color: Colors.black),
           ),
           const SizedBox(height: 10),
           Text(
-            'Body: ${post.body}',
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+            'Body: ${comments.body}',
+            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
           ),
           // Descomenta la imagen si deseas mostrarla
           // Image.network(

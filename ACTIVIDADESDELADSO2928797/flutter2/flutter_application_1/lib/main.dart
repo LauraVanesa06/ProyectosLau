@@ -13,14 +13,14 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 191, 136, 250),
         appBar: AppBar(
-          title: Text('BIENVENIDOO',
+          title: const Text('                                    BIENVENIDOO',
             style: TextStyle(
               color: Colors.black
             ),  
           ),
           backgroundColor: const Color.fromARGB(255, 191, 136, 250),
         ),
-        body: Eleccion(),
+        body: const Eleccion(),
       ),
     );
   }

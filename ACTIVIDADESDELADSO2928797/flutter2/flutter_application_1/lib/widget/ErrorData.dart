@@ -11,7 +11,7 @@ class Errordata extends StatelessWidget {
     return Center(
       child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('ERROR: ID NO ENCONTRADO'),
+                  Text('ERROR: INFO NO ENCONTRADA'),
                   Text('${snapshot.error}'),
                   const SizedBox(height: 10),
                   

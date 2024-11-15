@@ -2,10 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/estructura_post.dart';
 import 'package:flutter_application_1/pages/estructura_user.dart';
 import 'package:flutter_application_1/pages/estructura_photos.dart';
-import 'package:flutter_application_1/pages/estructura_comentarios.dart';
-import 'package:flutter_application_1/pages/estructura_todos.dart';
 import 'package:flutter_application_1/pages/estructura_albumen.dart';
 
+//import 'package:flutter_application_1/pages/estructura_comentarios.dart';
+//import 'package:flutter_application_1/pages/estructura_todos.dart';
+
+/*
+
+import 'package:flutter_application_1/pages/estructura_comentarios.dart';
+import 'package:flutter_application_1/pages/estructura_todos.dart';
+
+*/
 
 void main() => runApp(const CardExampleApp());
 
@@ -26,13 +33,15 @@ class CardExampleApp extends StatelessWidget {
 }
 
 class Eleccion extends StatelessWidget {
-  const Eleccion({super.key});
+  const Eleccion({
+    super.key
+  });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('                                                                        A LA INTERFAZ'),         
+        title: const Text('                                                     A LA INTERFAZ'),         
         backgroundColor: const Color.fromARGB(255, 191, 136, 250),
       ),
       body: Column(
@@ -70,7 +79,6 @@ class Eleccion extends StatelessWidget {
                   margin: const EdgeInsets.all(10),
                   child: InkWell(
                     onTap: () {
-                      // Navega a la segunda página
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => UserSearchScreen()),
@@ -83,31 +91,6 @@ class Eleccion extends StatelessWidget {
                           leading: Icon(Icons.info, size: 40),
                           title: Text('Información de los Usuarios'),
                           subtitle: Text('Detalles sobre los Usuarios.'),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Expanded(
-                child: Card(
-                  elevation: 5,
-                  margin: const EdgeInsets.all(10),
-                  child: InkWell(
-                    onTap: () {
-                      // Navega a la segunda página
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => PostSearchScreen()),
-                      );
-                    },
-                    child: const Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        ListTile(
-                          leading: Icon(Icons.info, size: 40),
-                          title: Text('Fotos'),
-                          subtitle: Text('Detalles de las fotos.'),
                         ),
                       ],
                     ),
@@ -128,7 +111,33 @@ class Eleccion extends StatelessWidget {
                       // Navega a la segunda página
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => PostSearchScreen()),
+                        MaterialPageRoute(builder: (context) => PhotosSearchScreen()),
+                      );
+                    },
+                    child: const Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        ListTile(
+                          leading: Icon(Icons.info, size: 40),
+                          title: Text('Fotos'),
+                          subtitle: Text('Detalles de las fotos.'),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              
+              Expanded(
+                child: Card(
+                  elevation: 5,
+                  margin: const EdgeInsets.all(10),
+                  child: InkWell(
+                    onTap: () {
+                      // Navega a la segunda página
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => AlbumSearchScreen()),
                       );
                     },
                     child: const Column(
@@ -144,6 +153,9 @@ class Eleccion extends StatelessWidget {
                   ),
                 ),
               ),
+]),
+          Row(
+            children: <Widget>[
               Expanded(
                 child: Card(
                   elevation: 5,

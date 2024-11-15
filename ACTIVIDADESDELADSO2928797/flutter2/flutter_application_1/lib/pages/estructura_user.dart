@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/partes.dart'; // Asegúrate de que la página esté importada
+import 'package:flutter_application_1/models/user.dart';
+import 'package:flutter_application_1/pages/partes_user.dart'; // Asegúrate de que la página esté importada
 
 class UserSearchScreen extends StatelessWidget {
   final TextEditingController _controller = TextEditingController();
@@ -8,9 +9,10 @@ class UserSearchScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 191, 136, 250),
-      appBar: AppBar(title: const Text('Buscar Post'),
-              backgroundColor: const Color.fromARGB(255, 191, 136, 250),
+      appBar: AppBar(title: const Text('Buscar Usuario'),
+        backgroundColor: const Color.fromARGB(255, 191, 136, 250),
       ),
+      
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
@@ -36,15 +38,22 @@ class UserSearchScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                String postId = _controller.text;
-                if (postId.isNotEmpty) {
+                String userId = _controller.text;
+                var geo = _controller.text;
+                var address = _controller.text;
+                dynamic company = _controller.text;
+
+                if (userId.isNotEmpty) {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ResultPage(postId: postId),
+                      builder: (context) {
+                
+                        return ResultPage(userId: userId, geo: geo, address: address, company: company,);
+                      },
                     ),
                   );
                 } else {
@@ -53,11 +62,13 @@ class UserSearchScreen extends StatelessWidget {
                   );
                 }
               },
-              child: const Text('Buscar Post'),
+              child: const Text('Buscar User'),
             ),
           ],
         ),
       ),
     );
   }
+
+
 }

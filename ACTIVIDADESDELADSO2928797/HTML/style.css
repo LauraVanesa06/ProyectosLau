@@ -1,0 +1,43 @@
+main{ 
+    border: 1px solid red;
+    height: 600px; /* alto del recuadro */
+    width: 1200px; /* ancho del recuadro*/
+    margin: auto; /* cetrar el recuadro */ 
+}
+header{
+    border: 1px solid rgb(229, 255, 0);
+    height: 100px; /* alto del recuadro */
+    }
+
+nav{
+    border: 1px solid rebeccapurple;
+    height: 50;
+    width: 50;
+}
+
+section{
+    border: 1px solid rgb(114, 245, 250);
+    width: 5000px;
+}
+.dos{
+    border: 1px solid rgb(250, 114, 166);
+    height: 50;
+    display: inline;
+}
+
+aside{
+    border: 1px solid blue;
+    height: 350px;
+    width: 300px;
+    float: left;
+}
+
+article{
+    border: 1px solid red;
+    width: 300;
+    display: inline-block;
+    
+}
+
+
+/* llamar clae con punto*/

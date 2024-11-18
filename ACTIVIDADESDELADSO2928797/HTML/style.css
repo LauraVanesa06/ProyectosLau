@@ -1,6 +1,6 @@
 main{ 
     border: 1px solid red;
-    height: 600px; /* alto del recuadro */
+    height: 700px; /* alto del recuadro */
     width: 1200px; /* ancho del recuadro*/
     margin: auto; /* cetrar el recuadro */ 
 }
@@ -17,12 +17,14 @@ nav{
 
 section{
     border: 1px solid rgb(114, 245, 250);
-    width: 5000px;
+    width: 1200px;
+    height: 490px;
 }
 .dos{
-    border: 1px solid rgb(250, 114, 166);
-    height: 50;
-    display: inline;
+    border: 5px solid rgb(250, 114, 166);
+    height: 10;
+    width: 40;
+    float: right;
 }
 
 aside{
@@ -35,9 +37,13 @@ aside{
 article{
     border: 1px solid red;
     width: 300;
-    display: inline-block;
+    display: inline;
     
 }
-
+footer{
+    border: 1px solid rebeccapurple;
+    height: 50;
+    width: 50;
+}
 
 /* llamar clae con punto*/

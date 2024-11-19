@@ -1,0 +1,93 @@
+main{
+    border: 1px solid black;
+    padding: 50px;
+    margin: 5px ;
+}
+
+article{
+    border: 1px solid black;
+    padding: 50px;
+    margin: 5px ;
+}
+
+footer{
+    border: 1px solid black;
+    padding: 50px;
+    margin: 5px ;
+}
+nav{
+    border: 1px solid black;
+    padding: 50px;
+    margin: 5px ;
+}
+header{
+    border: 1px solid gray;
+    padding: 50px;
+    margin: 5px ;
+}
+
+.dos{
+    display: inline-block;
+}
+aside{
+    background-color: rgb(51, 187, 112);
+    border: 1px solid rgb(51, 187, 112);
+    height: 250px;
+    width: 400px;
+    float: right;
+}
+
+article{
+    width: 600px;
+}
+/*
+main{
+    border: 1px solid black;
+    height: 1000;
+    margin: auto;
+}
+
+header{
+    border: 1px solid grey;
+    height: 100px;
+    margin: auto;
+}
+nav{
+    border: 1px solid rgb(25, 185, 111);
+    height: 50px;
+    margin: auto;
+}
+
+section{
+    border: 1px solid snow;
+    height: 500px;
+    margin: auto;
+}
+.dos{
+    border: 1px solid rgb(36, 35, 35);
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    display: inline-block;
+}
+article{
+    border: 1px solid yellow;
+    height: 200px;
+    width: 600px;
+    display: run-in;
+    
+}
+
+aside{
+    border: 1px solid rgb(6, 141, 78);
+    height: 300px;
+    width: 600px;
+    float: right;
+}
+
+
+footer{
+    border: 1px solid rgb(25, 185, 111);
+    height: 50px;
+    margin: auto;
+}*/

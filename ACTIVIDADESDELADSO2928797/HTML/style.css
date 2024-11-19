@@ -7,43 +7,52 @@ main{
 header{
     border: 1px solid rgb(229, 255, 0);
     height: 100px; /* alto del recuadro */
+    margin: auto;
     }
 
 nav{
     border: 1px solid rebeccapurple;
     height: 50;
-    width: 50;
+    width: 40;
+    margin: auto;
+
 }
 
 section{
     border: 1px solid rgb(114, 245, 250);
-    width: 1200px;
+    width: 1100px;
     height: 490px;
-}
-.dos{
-    border: 5px solid rgb(250, 114, 166);
-    height: 10;
-    width: 40;
-    float: right;
+    margin: auto;
 }
 
 aside{
     border: 1px solid blue;
     height: 350px;
     width: 300px;
-    float: left;
+float: left;
+}
+
+.dos{
+    border: 2px solid rgb(250, 114, 166);
+    height: 350px;
+    width: 700px;
+    float: right;
 }
 
 article{
     border: 1px solid red;
+    height: 150px;
     width: 300;
-    display: inline;
+    display: run-in;
+    margin: auto;
+
     
 }
 footer{
     border: 1px solid rebeccapurple;
     height: 50;
-    width: 50;
+
+    margin: auto;
 }
 
 /* llamar clae con punto*/

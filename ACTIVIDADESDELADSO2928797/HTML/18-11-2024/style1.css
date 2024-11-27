@@ -1,93 +1,214 @@
-main{
+main {
     border: 1px solid black;
-    padding: 50px;
-    margin: 5px ;
+    max-width: 900px; /* Flexible */
+    margin: 0px auto; /* Centrar main */
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-article{
-    border: 1px solid black;
-    padding: 50px;
-    margin: 5px ;
+header {
+    background-image: url('perrito-patrón-fluido-de-huesos-perro-con-trazas-fondo-gris-y-pistas-perros-grises-los-tienen-patrones-sin-fisuras-hueso-garras-267448595.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #fff;
+    height: 220px;
+    width: 100%; 
+    border-radius: 20px 20px 0 0;
+    text-align: center;
 }
 
-footer{
-    border: 1px solid black;
-    padding: 50px;
-    margin: 5px ;
-}
-nav{
-    border: 1px solid black;
-    padding: 50px;
-    margin: 5px ;
-}
-header{
-    border: 1px solid gray;
-    padding: 50px;
-    margin: 5px ;
-}
-
-.dos{
-    display: inline-block;
-}
-aside{
-    background-color: rgb(51, 187, 112);
-    border: 1px solid rgb(51, 187, 112);
-    height: 250px;
-    width: 400px;
-    float: right;
-}
-
-article{
-    width: 600px;
-}
-/*
-main{
-    border: 1px solid black;
-    height: 1000;
-    margin: auto;
-}
-
-header{
-    border: 1px solid grey;
-    height: 100px;
-    margin: auto;
-}
-nav{
-    border: 1px solid rgb(25, 185, 111);
-    height: 50px;
-    margin: auto;
-}
-
-section{
-    border: 1px solid snow;
-    height: 500px;
-    margin: auto;
-}
-.dos{
-    border: 1px solid rgb(36, 35, 35);
-    height: 500px;
-    width: 600px;
-    margin: auto;
-    display: inline-block;
-}
-article{
-    border: 1px solid yellow;
+.sectionH1 {
     height: 200px;
-    width: 600px;
-    display: run-in;
+    width: 50%;
+    /*display: flex;*/
+    float: left;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    color: black;
+    font-weight: normal;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+
+
+.sectionH2 {
+    height: 200px;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 10px; /* Bordes redondeados para imágenes */
+}
+
+
+nav {
+    border: 1px rgb(25, 73, 75);
+    background-color: rgb(25, 73, 75);
+    /* width: 96.8%; Ancho flexible */
+    padding: 15px;
+    margin: 0px;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+nav p {
+    margin: 0;
+    text-align: center;
+}
+
+a{
+    justify-content: space-between; 
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+.dosart {
+  display: flex; 
+    width: 100%; 
+    margin: 10px 0;
+}
+
+article {
+border: 1px solid black;
+    background-color: rgb(255, 255, 154);
+height: 100%; 
+   width: 100%;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+.dos{
+    width:60%;
+    height: 500px;
+    float: left;
+}
+.art1 {
     
+    height: auto;
+    width: 100%;
 }
 
-aside{
-    border: 1px solid rgb(6, 141, 78);
-    height: 300px;
-    width: 600px;
+.sectionP1 {
+    text-align: justify;
+    height: 5px;
+    width: 60%; /* Para flexbox */
+    margin-bottom: 5px;
+    display: inline-block;
+
+}
+.aside{
+   margin: 0 0 0 10px ;
+
+}
+.sectionP2 {
+    width: 38%;
+    text-align: center;
+    display: inline-block;
+}
+
+.imgP2 {
+    border-radius: 20px;
+}
+
+p{
+    text-align: justify;
+    height: auto;
+    width: 100%;
+
+}
+.div{
+    margin: 0px auto;
+    width: 20%;
+    display: inline;
+
+    margin: 20px ;
+}
+
+.h1{
+    border: 1px;
+    border-radius: 20px 20px 0 0;
+background-color: rgb(16, 47, 48);
+margin: 0;
+font-size: 20px;
+color: white;
+padding: 10px;
+}
+aside {
+    background-color: rgb(25, 73, 75);
+    padding: auto;
+    width: 26%;
     float: right;
+    margin: 20px auto;
+    border-radius: 20px; /* Bordes redondeados */
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*text-align: center;*/
+}
+form{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+label{
+   
+    white-space: pre-line;
+    padding: 5px;
+    margin: 5px;
+
 }
 
 
-footer{
-    border: 1px solid rgb(25, 185, 111);
-    height: 50px;
-    margin: auto;
+/*
+aside::before {
+    content: "Texto en el borde superior";
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgb(3, 82, 3);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 14px;
 }*/
+input{
+    white-space: pre-line;
+    padding: 5px;
+    margin: 5px;
+   
+}
+footer {
+    border: 1px solid black;
+    background-color: rgb(25, 73, 75);
+    padding: 20px;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+footer h3{
+    color: gray;
+    margin: 2px;
+}

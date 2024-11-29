@@ -1,0 +1,31 @@
+
+h1{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+  }
+section{
+    background-color: pink;
+    border-radius: 5px;
+    margin: 1px;
+    width: 300px;
+
+}
+
+table{
+background-color: pink;
+    border: 4px solid pink;
+    width: 300px;
+
+
+}
+
+td{
+   
+    color: aliceblue;
+}
+
+tr{
+    background-color: rgb(183, 0, 255);
+}

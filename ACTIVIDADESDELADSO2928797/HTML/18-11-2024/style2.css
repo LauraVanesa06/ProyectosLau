@@ -86,15 +86,18 @@ a{
 
 .dos{
     display: inline-block;
-    width: 25%;
+    width: 30%;
     margin: 2px;
+
+
   
 }
 
 .tres{
     display: inline-block;
-    width: 25%;
+    width: 30%;
     margin: 2px;
+ 
 }
 
 h1{ 
@@ -109,9 +112,8 @@ h1{
 }
 
 article{
-    border: 1px solid black;
-    width: 140px;
-    margin: 5px auto;
+   background-color: #beb4b4;
+    width: 99%;
     display: block;
 
 }
@@ -125,9 +127,10 @@ flex-wrap: wrap;
 }
 aside{
     
-    margin: 0 0 0 10px ;
+    margin: 5px 0 0 10px ;
     width: 36%;
     display: inline-block;
+    
 }
 aside form{
     background-color: gray;
@@ -153,7 +156,9 @@ input {
 
 h3{ 
     background-color: rgb(10, 10, 8);
-    margin: 10px 0   0  0 ; 
+    margin: 5px 0   0  0 ; 
+    height: 20px;
+    width: 100%;
     color: rgb(240, 188, 19);
     font-weight: bold;
     font-size: 15px;
@@ -170,7 +175,7 @@ h3{
 }
 .menu-container {
     background-color: rgb(41, 41, 41); 
-    width: 167px; 
+    width: 94%; 
     padding: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
@@ -203,7 +208,7 @@ h3{
 
   footer {
     border: 1px solid black;
-    background-color: rgb(95, 95, 95);
+    background-color: rgb(11, 11, 11);
     padding: 20px;
     text-align: center;
     margin: 10px auto;

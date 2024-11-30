@@ -88,7 +88,7 @@ a{
     display: inline-block;
     width: 30%;
     margin: 2px;
-
+    
 
   
 }
@@ -125,6 +125,8 @@ article img{
 flex-wrap: wrap;
     
 }
+
+
 aside{
     
     margin: 5px 0 0 10px ;

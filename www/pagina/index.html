@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.css">
+<link rel="stylesheet" href="style1.css">
+    <title> </title>
 </head>
-<body> 
+<body>
     <main > 
         <header> 
             <section class="sectionH1">
@@ -28,11 +28,11 @@
         </header>
 
         <nav> 
-            <a href="">.SERVICIOS.</a>
+            <a href="buscar.html">.Buscar Cita.</a>
             <p>|</p>
-            <a href="">.PRODUCTOS.</a> 
+            <a href="delete.html">.Eliminar 1 datos.</a> 
             <p>|</p>
-            <a href="">.GUARDERIA.</a> 
+            <a href="update.html"> Update.</a> 
             <p>|</p>
             <a href="">.PROMOCIONES.</a>
         </nav>
@@ -69,48 +69,49 @@
             </section>
             <section class="aside">
                
-                <aside > 
-                    <h1 class="h1"> 
-                        Solicitar cita medica.
-                    </h1>  
-               <form action="conexion.php" method="post">
+   
+        <aside>
+            <h1> 
+                Solicitar cita medica
+            </h1>
+            <form action="conn.php" method="post">
                 <label for=""> Mascota</label>
-                <input type="text" name="IngreseNombre" id="IngreseNombre " value=" Ingrese Nombre">
-               
-               <label for=""> Edad </label>
-               <input type="number" name="" id="">
-               
-               <label for="">Raza</label>
-                <input type="text" value="Ingrese Raza">
-               
-                <label for="">Fecha</label>
-                <input type="date" name="" id="" value="">
-               
-                <label for="">Hora:</label>
-                <input type="time" name="" id="" >
-               
-                <label for="">Amo:</label> 
-               <input type="text" value="Ingrese Nombre">
-               
-               <input type="button" value="Validar cita" >
-          
-               </form>
-                </aside>
-            </section>
+        <input type="text" name="Mascota" id="Mascota " value=" Ingrese Nombre">
+       
+       <label for=""> Edad </label>
+       <input type="number" name="Edad" id="Edad">
+       
+       <label for="">Raza</label>
+        <input type="text" name=" Raza" id="">
+       
+        <label for="">Fecha</label>
+        <input type="date" name="Fecha" id="" value="">
+       
+        <label for="">Hora:</label>
+        <input type="time" name="Hora" id="" >
+       
+        <label for="">Amo:</label> 
+       <input type="text" value="Ingrese Nombre" name="Amo">
+                <input type="submit" value="Enviar">
+            </form>
             
-        </section>
-        <footer> 
-            <h3>
-                contáctenos
-            </h3>
-            <h3>
-                Línea gratuita 018000-00001
-            </h3>
+        </aside>
+    
+    </section>
             
-            <h3>
-                Correo:preguntas@caninosyfelinos.com
-            </h3>
-        </footer>
-    </main>
+</section>
+<footer> 
+    <h3>
+        contáctenos
+    </h3>
+    <h3>
+        Línea gratuita 018000-00001
+    </h3>
+    
+    <h3>
+        Correo:preguntas@caninosyfelinos.com
+    </h3>
+</footer>
+</main>
 </body>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <form action="pagina2.php" method="post">
+        Telefono: <input type="number" name="tel"><br>
+        E-mail: <input type="text" name="email"><br>
+        Ingrese su nombre: 
+        <input type="text" name="nombre" id="" required>
+        <br>
+        <br>
+
+        Ingrese su apellido: 
+        <input type="text" name="apellido" id="" required>
+        <br>
+        <br>
+
+        Ingrese su direccion:
+        <input type="text" name="dir" id="" required>
+
+        <br>
+        <br>
+        Ingrese su género:
+        <br>
+        Femenino <input type="radio" name="genero" value="fem"> 
+        Masculino <input type="radio" name="genero" value="mas"> 
+        
+        <br>
+        <br>
+
+        ¿Qué le gusta?
+        <br>
+        Leer <input type="checkbox" name="uno" id="">
+        <br>
+        Bailar <input type="checkbox" name="dos" id="">
+        <br>
+        Cantar <input type="checkbox" name="tres" id="">
+        <br>
+        Dibujar <input type="checkbox" name="cuatro" id="">
+        <br>
+        <p>
+            ¿Cual es su nivel de estudio?
+            </p>
+        <select name="operacion" required>
+            <option value=" "> </option>
+            <option value="ts">Tecnico en sistemas</option>
+            <option value="mc">Mantenimiento de pc</option>
+            <option value="ta">Tecnologo ADSO </option>
+      
+          </select>
+
+        <button type="submit"> Enviar </button>
+
+    </form>
+    <form action="select.php" method="get">
+        <input type="submit" value="Ver listado">
+        <button type="submit"> listar </button>
+    </form>
+</body>
+</html>

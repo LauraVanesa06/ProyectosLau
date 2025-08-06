@@ -1,0 +1,35 @@
+Código: 1
+Nombre: LAURA
+Email: lvanesadelahoz@gmail.com
+Curso: Desconocido
+--------------------------------------------------------
+Código: 2
+Nombre: Laura
+Email: lvanesadelahoz@gmail.com
+Curso: Desconocido
+--------------------------------------------------------
+Código: 3
+Nombre: Laura
+Email: lvanesadelahoz@gmail.com
+Curso: Desconocido
+--------------------------------------------------------
+Código: 4
+Nombre: Laura
+Email: lvanesadelahoz@gmail.com
+Curso: Desconocido
+--------------------------------------------------------
+Código: 5
+Nombre: Laura
+Email: lvanesadelahoz@gmail.com
+Curso: Desconocido
+--------------------------------------------------------
+Código: 6
+Nombre: Laura
+Email: lvanesadelahoz@gmail.com
+Curso: Desconocido
+--------------------------------------------------------
+Código: 7
+Nombre: lola
+Email: lauradelahoz@idetp.edu.co
+Curso: Desconocido
+--------------------------------------------------------

@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(107, 186, 254);
+}
+
+img{
+    display: none;
+}
+
+@media (max-width: 700px){
+    body{
+        background-color: rgb(140, 36, 164);
+    }
+    img{
+        display: block
+    }
+    ul{
+        display: none;
+    }
+    h2{
+            display: none;
+    }
+}
+#pond {
+    display: flex;
+  }
+  
+  .yellow {
+
+flex-flow:;}
+

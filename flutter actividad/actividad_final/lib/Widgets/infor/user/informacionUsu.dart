@@ -15,9 +15,9 @@ class informacionUsu extends StatelessWidget {
       child: Container(
 
       decoration: BoxDecoration(
+          
         border: Border.all(
           color: Colors.black
-          
         )
       ),
       child: Success(),

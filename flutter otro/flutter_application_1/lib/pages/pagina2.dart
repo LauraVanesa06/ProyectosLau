@@ -1,52 +1,23 @@
 import 'package:flutter/material.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../bloc/user_bloc_bloc.dart';
 
-class Pagina2 extends StatefulWidget {
+class Pagina2 extends StatelessWidget {
   const Pagina2({super.key});
   
   @override
-State<Pagina2> createState() => _Pagina2State();
-  
-}
-
-class _Pagina2State extends State<Pagina2> {
-
-  List<dynamic> datos = [];
-  bool cargando = true;
-  
-  @override
- void initState() {
-    super.initState();
-    fetchDatos();
- }
- 
-  Future<void> fetchDatos() async {
-      final url = Uri.parse('https://jsonplaceholder.typicode.com/users');
-      final response = await http.get(url);
-      if (response.statusCode ==200) {
-        setState(() {
-          datos = jsonDecode(response.body);
-          cargando = false;
-        });
-        
-      } else {
-        throw Exception('No se pudieron cargar los datos');
-      }
-  }
-  @override
-Widget build(BuildContext context) {
+  Widget build(BuildContext context) {
   return Scaffold(
     appBar: AppBar(title: const Text('Datos cargados')),
+      body: BlocBuilder<UserBlocBloc, UserBlocState>(
+        builder: (context, State){
+          if (State is UserLoaded) {
+            return const Center(child: CircularProgressIndicator());
+          }
+        }
+      )
 
-    body: cargando
-        ? const Center(child: CircularProgressIndicator())
-        : ListView.builder(
-            itemCount: datos.length,
-            itemBuilder: (context, index) {
-              final usuario = datos[index];
-
-              return Column(
+        return Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Image.network(
@@ -62,9 +33,11 @@ Widget build(BuildContext context) {
                   const Divider(),
                 ],
               );
-            },
+              
+          
           ),
   );
 }
+
 
   }

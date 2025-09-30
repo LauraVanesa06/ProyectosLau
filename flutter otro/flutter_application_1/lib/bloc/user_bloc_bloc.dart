@@ -8,7 +8,7 @@ part 'user_bloc_state.dart';
 
 class UserBlocBloc extends Bloc<UserBlocEvent, UserBlocState> {
   UserBlocBloc() : super(UserBlocInitial()) {
-    // evento de carga de usuarios
+
     on<FetchUsers>((event, emit) async {
       emit(UserBlocLoading());
       try {

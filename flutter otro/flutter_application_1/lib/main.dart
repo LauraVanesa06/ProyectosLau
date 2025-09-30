@@ -1,25 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'bloc/user_bloc_bloc.dart';
 import 'Initial.dart';
 
-
-void main(){
-  runApp(
-    BlocProvider(
-      create: (_) => UserBlocBloc(),
-      child: const MyApp(),    
-    ),
-  );
+void main() {
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const   MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: const Initial(),
+    return const MaterialApp(
+      home: Initial(),
     );
   }
 }

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'pages/pagina2.dart';
 import 'cubit/user_cubit.dart';
-
 class Initial extends StatefulWidget {
   const Initial({super.key});
 
@@ -37,14 +36,13 @@ class _InitialState extends State<Initial> {
                 context,
                 MaterialPageRoute(builder: (_) => const Pagina2()),
               );
-              context.read<UserCubit>().reset(); // Resetea después de navegar
+              context.read<UserCubit>().reset(); 
             }
           },
           child: BlocBuilder<UserCubit, UserState>(
             builder: (context, state) {
               return Stack(
                 children: [
-                  // Fondo degradado
                   Container(
                     decoration: const BoxDecoration(
                       gradient: LinearGradient(
@@ -154,6 +152,24 @@ class _InitialState extends State<Initial> {
                       ),
                     ),
                   ),
+                     if (state.isLoading)
+          Container(
+            color: Colors.black.withOpacity(0.5),
+             child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+      
+                  const CircularProgressIndicator(
+                    valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                  ),
+                  const SizedBox(height: 15),
+                  const Text(
+                    "Cargando...",
+                    style: TextStyle(color: Colors.white, fontSize: 18),
+                  ),
+                ],
+              )))
                 ],
               );
             },

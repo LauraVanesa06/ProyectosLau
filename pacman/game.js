@@ -41,7 +41,7 @@ function dibujarMapa() {
                 ctx.arc(
                     x + tileSize/2,
                     y + tileSize/2,
-                    tileSize/8,
+                    tileSize/9,
                     0,
                     Math.PI*2
                 );
@@ -50,6 +50,49 @@ function dibujarMapa() {
         }   
     }
    }
+}
+const ghosts = [
+      { x: tileSize*2, y: tileSize*1, size: 26, speed:2, dirX: 1, dirY: 0 },
+      { x: tileSize*4, y: tileSize*3, size: 26, speed: 2, dirX: 1, dirY: 0 }
+    
+];
+
+function actualizarFantasmas() {
+  ghosts.forEach(ghost => {
+    ghost.x += ghost.dirX * ghost.speed;
+    ghost.yfgo += ghost.dirY * ghost.speed;
+
+    if (ghost.x < 0 || ghost.x + ghost.size > canvas.width) {
+      ghost.dirX *= -1;
+    }
+    if (ghost.y < 0 || ghost.y + ghost.size > canvas.height) {
+      ghost.dirY *= -1;
+    }
+
+  
+  });
+}
+
+function dibujarFantasmas() {
+  ctx.fillStyle = "red";
+  ghosts.forEach(ghost => {
+    ctx.fillRect(ghost.x, ghost.y, ghost.size, ghost.size);
+  });
+}
+function ComprobarCol() {
+    for (const ghost of ghosts) {
+        if (
+            player.x < ghost.x + ghost.size &&
+            player.x + player.size > ghost.x && 
+            player.y < ghost.y + ghost.size &&
+            player.y + player.size > ghost.y
+        ) {
+           alert("¡ATRPADO!");
+           document.location.reload();
+           break;
+
+        }
+    }
 }
 
 ctx.fillStyle = "black"
@@ -68,7 +111,9 @@ const player = {
     size: 26,
     speed: 3
 }
+
 // si no funciona se cambia a keys
+
 const teclas ={
     ArrowUp: false,
     ArrowDown:  false,
@@ -136,7 +181,10 @@ function gameLoop() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
     dibujarMapa();
     actualizarJugador();
+    actualizarFantasmas();
     dibujarAlJugador();
+    dibujarFantasmas();
+    ComprobarCol();
     dibujarpuntuacion();
     requestAnimationFrame(gameLoop);
     

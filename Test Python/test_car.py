@@ -1,8 +1,10 @@
 from car import Car
 
-def test_es_una_instancia_car():
-    mi_auto = Car("ABC123", "ROJO")
-    assert isinstance
+def test_car():
+  
+  
+   objeto = Car("cvv657", "rojo", "5")
+assert isinstance
 
 
 def test_attributos_correctos():

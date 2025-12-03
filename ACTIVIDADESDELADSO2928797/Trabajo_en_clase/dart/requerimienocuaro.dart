@@ -36,7 +36,7 @@ class LogisticaMaritima extends Logistica{
 }
 
 void main(){
-  Logistica l = LogisticaTerrestre();
+  Logistica l = LogisticaMaritima();
   Transporte t = l.crearTransporte();
   t.deliver();
 }
